@@ -15,6 +15,12 @@ app.get('/writes', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/uploads/writes.html'));
 });
 
+// Route for the reads page
+app.get('/reads', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/uploads/reads.html'));
+});
+
+
 app.listen(3001, () => {
     console.log('Server is listening on port 3001...');
 });
